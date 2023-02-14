@@ -24,18 +24,18 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import TextField from '@mui/material/TextField';  
-import Stack from '@mui/material/Stack';
+// import Stack from '@mui/material/Stack';
 
 import InputLabel from '@mui/material/InputLabel';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import { DataGrid, GridToolbarContainer, GridToolbarExport } from '@mui/x-data-grid';
+import { GridToolbarContainer, GridToolbarExport } from '@mui/x-data-grid';
 
 
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import LastPageIcon from '@mui/icons-material/LastPage';
-import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
+// import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
@@ -44,7 +44,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import SaveIcon from '@mui/icons-material/Save';
 
-import FormHelperText from '@mui/material/FormHelperText';
 import Swal from 'sweetalert2';
 
 import { styled } from '@mui/material/styles';
@@ -155,12 +154,12 @@ const rows = [
 
 //& iconos del speed dial
 
-const actions = [
-  { icon: <PlaylistAddIcon/>, name: 'Agregar' },
-  { icon: <PictureAsPdfIcon />, name: 'Pdf' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
-];
+// const actions = [
+//   { icon: <PlaylistAddIcon/>, name: 'Agregar' },
+//   { icon: <PictureAsPdfIcon />, name: 'Pdf' },
+//   { icon: <PrintIcon />, name: 'Print' },
+//   { icon: <ShareIcon />, name: 'Share' },
+// ];
 
 const Administrador = ()=> {
 

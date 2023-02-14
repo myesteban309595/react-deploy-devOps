@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Header from './utils/Header';
 import Home from './views/ClientHome'
 import Registrarse from  './components/Registrarse'
@@ -11,7 +11,7 @@ import AccountMenu from './components/profile/AccountMenu';
 
 import AdminHome from './views/admin/AdminHome';
 
-const linkArrayNavBar = ['PRODUCTOS','SERVICIOS','INICIO','CONTACTANOS'];
+// const linkArrayNavBar = ['PRODUCTOS','SERVICIOS','INICIO','CONTACTANOS'];
 
 function App() {
   

@@ -23,11 +23,11 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import Checkbox from '@mui/material/Checkbox';
+// import Checkbox from '@mui/material/Checkbox';
 
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import LastPageIcon from '@mui/icons-material/LastPage';
-import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
+// import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
@@ -37,7 +37,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import SaveIcon from '@mui/icons-material/Save';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
-import { DataGrid, GridToolbarContainer, GridToolbarExport } from '@mui/x-data-grid';
+import { GridToolbarContainer, GridToolbarExport } from '@mui/x-data-grid';
 import Swal from 'sweetalert2';
 import Tooltip from '@mui/material/Tooltip';
 
@@ -154,12 +154,12 @@ const rows = [
 
 //& iconos del speed dial
 
-const actions = [
-  { icon: <PlaylistAddIcon/>, name: 'Agregar' },
-  { icon: <PictureAsPdfIcon />, name: 'Pdf' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
-];
+// const actions = [
+//   { icon: <PlaylistAddIcon/>, name: 'Agregar' },
+//   { icon: <PictureAsPdfIcon />, name: 'Pdf' },
+//   { icon: <PrintIcon />, name: 'Print' },
+//   { icon: <ShareIcon />, name: 'Share' },
+// ];
 
 const Administrador = ()=> {
 
@@ -220,14 +220,6 @@ const Administrador = ()=> {
         )
       }
     })  
-  }
-
-  function CustomToolbar() {
-    return (
-      <GridToolbarContainer>
-        <GridToolbarExport />
-      </GridToolbarContainer>
-    );
   }
 
 return (

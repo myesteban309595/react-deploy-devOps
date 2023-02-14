@@ -2,12 +2,8 @@
 import React, { Fragment, useMemo, useState } from 'react'
 
 import {
-    AppBar,
     Grid,
-    Toolbar,
     Typography,
-    Tab,
-    Tabs,
     Box,
     Button,
     FormControl,
@@ -16,11 +12,6 @@ import {
     InputAdornment,
     IconButton,
     TextField, 
-    FormLabel, 
-    ImageList,
-    ImageListItem,
-    ListSubheader,
-    ImageListItemBar,
 
 } from '@mui/material'
 
@@ -92,7 +83,7 @@ const Login = ()=> {
  const RegistrarDatos = ()=> {
       // console.log("body registrar datos",body);
    if(body.password !== "" && body.password.length > 3){
-    if(body.password == valuesRepeat.passwordRepeat ){ 
+    if(body.password === valuesRepeat.passwordRepeat ){ 
       axios.post('http://localhost:5050/api/registro',body)
       .then(({data})=> {
         Swal.fire({
@@ -101,10 +92,10 @@ const Login = ()=> {
          text: "Por favor inicia sesión.",
          confirmButtonText: "Aceptar",
          confirmButtonColor: "#3085d6",
+         background:"white"
          // showCancelButton: true,
          // cancelButtonColor: "#d33",
          // cancelButtonText: "Cancelar",
-         background:"white"
        }).then((result)=> {
          if(result.isConfirmed){
            window.location = '/';
@@ -155,7 +146,7 @@ const Login = ()=> {
 
   const MyFormHelperText = ()=> {
     const helperText = useMemo(()=> {
-      if(body.password == valuesRepeat.passwordRepeat && body.password !== ""){
+      if(body.password === valuesRepeat.passwordRepeat && body.password !== ""){
         return 'Coinciden'
       }else if(body.password !== ""){
         return 'No coinciden'
@@ -186,7 +177,7 @@ const Login = ()=> {
             backgroundImage:`url("https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg?w=2000")`,
             width:"100%",
             height: "100%",
-            marginTop:15, alignItems:"center", 
+            marginTop:15, 
             display:"flex",
             alignItems:"center",
             justifyContent:"center"

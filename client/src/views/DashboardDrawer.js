@@ -24,16 +24,16 @@ import {
     Grid,
  } from '@mui/material';
 
-import axios from 'axios';
-import Swal from 'sweetalert2';
+// import axios from 'axios';
+// import Swal from 'sweetalert2';
 
-import localStorage from 'localStorage'
-import jwt_decode from "jwt-decode";
+// import localStorage from 'localStorage'
+// import jwt_decode from "jwt-decode";
 
 //* componentes
 import AccountMenu from '../components/profile/AccountMenu';
-import ClientHome from './ClientHome';
-import Inicio from './Inicio';
+// import ClientHome from './ClientHome';
+// import Inicio from './Inicio';
 import Administrador from './modules/Administrador'
 import Alerta from './modules/Alerta'
 import Inventario from './modules/Inventario'
