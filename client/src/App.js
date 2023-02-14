@@ -32,12 +32,12 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element = {<Home/>}/>
+          {/* <Route path='/' element = {<Home/>}/> */}
           <Route path='/inicio' element = {<Inicio/>}/>
           <Route path='/header' element = {<Header/>} />
           <Route path='/registro' element = {<Registrarse/>} />
           <Route path='/adminHome' element = {<AdminHome/>} />
-          <Route path='/principal' element = {<PermanentDrawerLeft/>} />
+          <Route path='/' element = {<PermanentDrawerLeft/>} />
           <Route path='/accountMenu' element = {<AccountMenu/>} />
         </Routes>
       </BrowserRouter>
