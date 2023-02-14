@@ -1,0 +1,156 @@
+<Grid container xs={8} style={{ 
+          width:"80%",
+          height: "100%",
+          marginTop:15, 
+          display:"flex",
+          alignItems:"center", 
+          justifyContent:"center",
+          backgroundColor: "blue",
+          border: "3px solid red",
+          borderRadius: "8px"
+        }}>
+       
+       <Grid item xs={12}
+         style={{
+          backgroundColor: "yellow",
+          width: "50%"
+         }}
+        >
+          <h1> LOGO </h1>
+       </Grid>   
+       <Grid item xs={12}   
+          style={{
+          backgroundColor: "yellow",
+          width: "50%"
+         }}>
+          <Box 
+             sx={{
+               backgroundColor: "green",
+               width: "45%",
+               border: '1px solid grey',
+              '&:hover': {
+                // backgroundColor: 'primary.main',
+                // opacity: [0.9, 0.8, 0.7],
+              },
+             }}
+             >
+          {/*//& Titulo iniciar sesion */}
+          <Grid>
+           <Typography
+            style={{
+            fontSize:35,
+            color: "#424242",
+            fontFamily:"fantasy",
+            marginBottom:25,
+            marginLeft:75,
+            padding:15
+            }}
+           > 
+          INICIAR SESIÓN
+       </Typography>
+     </Grid>
+     {/*//& ingresar usuario */}
+      <FormControl sx={{ m: 1, width: 330}} variant="outlined" >
+     <TextField
+      value={body.email}
+      name='email'
+      id="input-with-icon-textfield"
+      label=" Usuario"
+      style={{
+         backgroundColor: "#ffe0b2",
+         marginLeft:50,
+         marginBottom:10,
+       }}
+       onChange= {inputChange}
+      InputProps={{
+      endAdornment: (
+       <InputAdornment position="end">
+         <AccountCircle />
+       </InputAdornment>
+      )}}
+      variant="outlined"
+     />
+     </FormControl>
+     {/*//& ingresar contraseña */}
+     <FormControl sx={{ m: 1, width: 330 }} variant="outlined" >
+       <InputLabel  htmlFor="outlined-adornment-password" style={{marginLeft:50}}>Contraseña</InputLabel>
+        <OutlinedInput
+          value={body.password}
+          name= 'password'
+          id="outlined-adornment-password"
+          style={{
+            background: "#ffe0b2", 
+            marginLeft:50
+           }}
+          type={values.showPassword ? 'text' : 'password'}
+          onChange={inputChange}
+          endAdornment={
+           <InputAdornment position="end">
+            <IconButton
+             aria-label="toggle password visibility"
+             onClick={handleClickShowPassword}
+             onMouseDown={handleMouseDownPassword}
+             edge="end"
+             >
+             {values.showPassword ? <VisibilityOff /> : <Visibility />}
+            </IconButton>
+          </InputAdornment>
+         }
+         label="Contraseña"
+         />
+     </FormControl>       
+     {/*//& botón ingresar */}
+     <Grid>
+      <Button 
+      className={classes.ingresar}
+        style={{
+        background:"white",
+        width: 150,
+        marginTop: 25,
+        borderRadius:11,
+        color: "black",
+        fontFamily:"serif",
+        marginLeft:125
+        }}
+        onClick = {onSubmit}
+      > Ingresar</Button>
+     </Grid>
+     {/*//& botón registrar */}
+     <Grid className={classes.registrarse}>
+      <Button 
+        href='/registro'
+        style={{
+          backgroundColor:"white",
+          width: 150,
+          marginTop: 15,
+          marginBottom:10,
+          borderRadius:11,
+          color: "black",
+          fontFamily:"serif",
+          marginLeft:125
+        }}
+      > Registrarse</Button>
+     </Grid>
+     <Grid >
+        <Button
+             href="/" 
+             style={{
+              width: 280,
+              marginTop: 5,
+              marginBottom:25,
+              borderRadius:11,
+              color: "black",
+              fontFamily:"serif",
+              marginLeft:60,
+              }}
+              onClick ={OlvidarContraseña}
+              > 
+              <Typography className={classes.forgot}>
+                  Olvidé mi contraseña
+              </Typography>
+        </Button>
+     </Grid>
+     </Box>
+      </Grid>
+
+  </Grid>
