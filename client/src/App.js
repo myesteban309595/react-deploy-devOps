@@ -11,6 +11,7 @@ import AccountMenu from './components/profile/AccountMenu';
 
 import AdminHome from './views/admin/AdminHome';
 
+//borrar este comentario
 // const linkArrayNavBar = ['PRODUCTOS','SERVICIOS','INICIO','CONTACTANOS'];
 
 function App() {
