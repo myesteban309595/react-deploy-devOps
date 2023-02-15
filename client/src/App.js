@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 // import Navbar from './components/Navbar';
 import Header from './utils/Header';
-import Home from './views/ClientHome'
+// import Home from './views/ClientHome'
 import Registrarse from  './components/Registrarse'
 import Inicio from './views/Inicio'
 import PermanentDrawerLeft from './views/DashboardDrawer';
